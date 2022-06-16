@@ -1088,6 +1088,14 @@ fill: #5a8dee;
 cursor:pointer;
 }
 
+.set-ward-bed .ward-bed-list input{
+padding:0.5rem;
+padding: 0.5rem;
+border-radius: 0.325rem;
+outline: 0;
+box-shadow: none;
+border: 0;}
+
 
 
 /*modal common*/
