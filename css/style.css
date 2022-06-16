@@ -643,10 +643,12 @@ color:#fff}
 
 .sub-header .main-menu .item .item__contents .contents__menu>ul>li:first-child {
     border-radius: 0 0 0 0.5rem;
+    display:block;
 }
 
 .sub-header .main-menu .item .item__contents .contents__menu>ul>li:last-child {
     border-radius: 0 0 0.5rem 0;
+    display:block
 }
 
 .sub-header .main-menu .item .item__contents .contents__menu>ul>li:hover {
@@ -655,7 +657,7 @@ color:#fff}
 }
 
 .sub-header .main-menu .item .item__contents .contents__menu>ul>li a {
-    padding: 3px 0 12px 0;
+    padding: 3px 0;
     font-size: 14px;
     color: #fff;
 }
@@ -763,6 +765,8 @@ background-color:#484c5a;
 border: 0;
 color: white;
 outline:0;
+padding:0.7rem;
+border-radius:0.325rem;
 }
 
 .admin-list-contents .sort-content .input-container .ico-search{
