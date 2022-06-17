@@ -27,7 +27,7 @@
         <!--MENU-->
         <div class="nav-top-wrapper">
             <div class="nav-top">
-                <div class="logo">VDM-ICU</div>
+                <div class="logo" onclick="location.href='index.html'">VDM</div>
                 <ul class="nav-menu">
                     <li class="menu-item">
                         <a href="index.html">
@@ -88,12 +88,12 @@
                         <div class="input-title">Sex</div>
                         <div class="checkbox-flex">
                             <div class="checkbox-select">
-                                <input type="checkbox">
-                                <label><span></span>M</label>
+                                <input type="checkbox" id="checkbox-m">
+                                <label for="checkbox-m"><span></span>M</label>
                             </div>
                             <div class="checkbox-select">
-                                <input type="checkbox">
-                                <label><span></span>F</label>
+                                <input type="checkbox" id="checkbox-f">
+                                <label for="checkbox-f"><span></span>F</label>
                             </div>
                         </div>
                     </div>
@@ -101,12 +101,12 @@
                         <div class="input-title">Alcohol</div>
                         <div class="checkbox-flex">
                             <div class="checkbox-select">
-                                <input type="checkbox">
-                                <label><span></span>Yes</label>
+                                <input type="checkbox" id="checkbox-yes">
+                                <label for="checkbox-yes"><span></span>Yes</label>
                             </div>
                             <div class="checkbox-select">
-                                <input type="checkbox">
-                                <label><span></span>No</label>
+                                <input type="checkbox" id="checkbox-no">
+                                <label for="checkbox-no"><span></span>No</label>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                         <input id="Hb" type="text">
                     </div>
                     <div class="input-container">
-                        <label for="mRSr">mRS(입원전)</label>
+                        <label for="mRSr">NIHSS</label>
                         <input id="mRSr" type="text">
                     </div>
                     <div class="input-container">
@@ -144,7 +144,7 @@
 
                 <div class="button-container">
                     <button type="button" class="btn btn-submit">Save</button>
-                    <button type="button" class="btn btn-cancel">Cancel</button>
+                    <button type="button" class="btn btn-cancel" onclick="location.href='data_list.html'">Cancel</button>
                 </div>
             </div>
         </div>

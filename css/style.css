@@ -6,9 +6,9 @@
     src: url("../fonts/Nunito-Regular.ttf"); }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Kdam Thmor Pro';
     font-weight: 400;
-    src: url("../fonts/Raleway-Medium.ttf"); }
+    src: url("../fonts/KdamThmorPro-Regular.ttf"); }
 
 @font-face {
     font-family: 'Nanum Gothic';
@@ -22,12 +22,26 @@
   --secondaryColor: #3b9cff;
   --secondFontColor: #a1b0cb;
   --bs-body-color: #a1b0cb;
+  --list-title-color:#93a2b1;
+  --btn-main-color:#5a8dee;
+  --btn-cancel-color:#555a6a;
+  --btn-second-color:#4d6089;
+  --active-red:#ff5b5c;
+  --active-orange:#fdac41;
+  --active-green:#1eb168;
+  --card-background:#2f3a50;
+  --input-bgc:#484c5a;
+  --input-disabled-color:#222938;
 }
+
+
 
 *{
 box-sizing: border-box;
 }
 
+
+/*scrollbar*/
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -49,6 +63,7 @@ box-sizing: border-box;
     background-color: #53596c; }
 
 
+
 body {
     font: 14px/1.5 'Nunito',sans-serif;
     font-weight: 400;
@@ -57,17 +72,23 @@ body {
     background: #1c222f;
 }
 
+
 a{
     text-decoration: none;
     color:#fff;
 }
 
+
 img {
     display: block;
 }
 
+
 button{
 border:none;}
+
+
+/*input[type="text"]*/
 
 input[type="text"]{
 -webkit-appearance: none;
@@ -84,19 +105,16 @@ color:#fff;
 }
 
 
+/*input[type="checkbox"]*/
 
 
-input[type="checkbox"] {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #bcbcbc;
-    cursor: pointer;
-}
+
 
 input[type="checkbox"] {
     display:none;
 }
+
+
 
 input[type="checkbox"] + label {
     color:#f2f2f2;
@@ -115,6 +133,9 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
 }
+
+
+/*input[type="radio"]*/
 
 input[type="radio"] {
     display:none;
@@ -154,34 +175,36 @@ cursor: pointer;
 box-sizing: border-box;
 display: block;
 transition: all .2s ease-in-out;
-background-color:#5a8dee;
-border-color: #5a8dee;
+background-color:var(--btn-main-color);
+border: 1px solid #789fe9;
 }
 
 .btn:hover {
-    background-color: transparent;
+    background-color: #789fe9;
     color: #FFF;
-    opacity:0.8;
+    opacity:0.9;
 }
 
 .btn-cancel{
 margin-left:0.5rem;
-background-color:#555a6a;
+background-color:var(--btn-cancel-color);
+border: 1px solid #4c4c4c;
 }
 
 .btn-cancel:hover{
-background-color:#555a6a;
-opacity:0.8;
+background-color:var(--btn-cancel-color);
+opacity:0.9;
 }
 
 .btn-submit{
 background-color:#4d6089;
 padding: 0.5rem 1rem;
+border: 1px solid #56637e;
 }
 
 .btn-submit:hover{
-background-color:#4d6089;
-opacity:0.8;
+background-color:#7390cf;
+opacity:0.9;
 }
 
 
@@ -202,7 +225,7 @@ justify-content: center;
 position: relative;
 min-width: 0;
 word-wrap: break-word;
-background-color: #2f3a50;
+background-color: var(--card-background);
 border: 0 solid #36445d;
 border-radius: 0.3125rem;
 /*flex: 1 1 auto;*/
@@ -225,12 +248,12 @@ position: relative;
 outline: 0;
 font-size:14px;
 font-family: 'Nunito',sans-serif;
-background-color:#484c5a;
+background-color:var(--input-bgc);
 color:#fff;
 }
 
 input[type="text"]:disabled {
-background:#222938;}
+background:var(--input-disabled-color);}
 
 input::-ms-clear,
 input::-ms-reveal{
@@ -277,9 +300,10 @@ margin:0 auto;
 }
 
 header .nav-top-wrapper .nav-top .logo{
-font-family: "Oswald", "sans-serif";
-font-size: 20px;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-size: 23px;
 font-weight: 700;
+cursor:pointer;
 }
 
 header .nav-top-wrapper .nav-top .logout{
@@ -337,7 +361,7 @@ fill:#fff;
 
 
 header .nav-top-wrapper .nav-top .nav-menu .menu-item.active{
-background-color:#5A8DEE;
+background-color:var(--btn-main-color);
 color:#fff;}
 
 
@@ -390,14 +414,14 @@ margin-left:1rem;
 }
 
 .patient-information .alarm-state.normal{
-background-color:rgb(30, 177, 104);}
+background-color:var(--active-green);}
 
 .patient-information .alarm-state.caution{
-background-color: #fdac41;
+background-color: var(--active-orange);
 }
 
 .patient-information .alarm-state.danger{
-background-color: #ff5b5c;
+background-color: var(--active-red);
 }
 
 
@@ -426,7 +450,7 @@ margin-right:0;}
 
 width: 100%;
 position: absolute;
-padding-top: 14rem;
+padding-top: 13.5rem;
 font-family: 'Nunito',sans-serif;
 }
 
@@ -455,6 +479,11 @@ justify-content: space-between;}
 .content-top .btn-contain{
 display:flex;}
 
+.content-top .btn-contain .input-search .search-title{
+font-size:16px;
+color:#bdbdbd;
+margin-right:0.5rem;}
+
 .content-top .btn-contain .create-btn{
 margin-left:0.5rem;}
 
@@ -468,6 +497,8 @@ width:100px;
 margin-left:0.5rem;
 padding: 0.5rem 1rem;
 }
+
+
 
 .date-list-wrapper{
 margin:1rem 0;
@@ -483,14 +514,25 @@ text-align: center;
 padding: 0.7rem;
 position: relative;}
 
+
+.date-list-wrapper .date-list.th{
+color:#93a2b1;
+}
+
 .date-list-wrapper .date-list li:nth-of-type(1){
-width:33%;}
+width:20%;}
 
 .date-list-wrapper .date-list li:nth-of-type(2){
-width:33%;}
+width:15%;}
 
 .date-list-wrapper .date-list li:nth-of-type(3){
-width:33%;}
+width:20%;}
+
+.date-list-wrapper .date-list li:nth-of-type(4){
+width:20%;}
+
+.date-list-wrapper .date-list li:nth-of-type(5){
+width:25%;}
 
 
 .date-list-wrapper .date-list-content .date-list{
@@ -533,12 +575,18 @@ flex: 1 1 20%;
 box-sizing: border-box;
 padding: 0.5rem;}
 
+.content-view .input-container .input-title{
+color:var(--list-title-color);
+}
+
 .create_content .input-content .content-view .input-container .checkbox-flex{
 display:flex;
+padding-top:0.5rem;
 }
 
 .content-view .input-container label{
-margin-bottom:0.5rem;}
+margin-bottom:0.5rem;
+color:var(--list-title-color);}
 
 .content-view .input-container .checkbox-flex .checkbox-select{
 display:flex;
@@ -557,7 +605,7 @@ margin-top:2rem;
 .content-top .temp-btn{
 display:flex;
 width:50px;
-background-color: #6179ad;}
+background-color: var(--btn-second-color);}
 
 .content-top .temp-btn:hover{
 background-color: #6179ad;
@@ -1187,7 +1235,7 @@ fill: #fff;
 @media (max-width: 1300px) {
 
   .content{
-    padding-top: 15.5rem;
+    padding-top: 14.5rem;
   }
 
   .patient-chart .patient-information .patient-info-wrapper{
@@ -1208,6 +1256,6 @@ fill: #fff;
 @media (max-width: 900px){
 
 .content {
-    padding-top: 18.5rem;
+    padding-top: 16.5rem;
     }
 }

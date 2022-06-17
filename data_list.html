@@ -27,7 +27,7 @@
         <!--MENU-->
         <div class="nav-top-wrapper">
             <div class="nav-top">
-                <div class="logo">VDM-ICU</div>
+                <div class="logo" onclick="location.href='index.html'">VDM</div>
                 <ul class="nav-menu">
                     <li class="menu-item">
                         <a href="index.html">
@@ -72,6 +72,7 @@
             </div>
             <div class="btn-contain">
                 <div class="input-search">
+                    <div class="search-title">환자 ID</div>
                     <input type="text">
                     <button class="btn search-btn">Search</button>
                 </div>
@@ -81,20 +82,26 @@
             </div>
         </div>
         <div class="date-list-wrapper">
-            <ul class="date-list">
-                <li>Patient list</li>
+            <ul class="date-list th">
+                <li>환자 ID</li>
                 <li>Age</li>
-                <li>Update time</li>
+                <li>최초 생성자</li>
+                <li>최종 수정자</li>
+                <li>업데이트 시간</li>
             </ul>
             <div class="date-list-content">
                 <ul class="date-list" onclick="location.href='data_edit.html'">
                     <li>13579</li>
                     <li>50</li>
+                    <li>vdm-1</li>
+                    <li>vdm-1</li>
                     <li>2022-03--14 14:00</li>
                 </ul>
                 <ul class="date-list">
                     <li>23568</li>
                     <li>45</li>
+                    <li>vdm-1</li>
+                    <li>vdm-2</li>
                     <li>2022-04--14 18:00</li>
                 </ul>
             </div>
@@ -103,4 +110,10 @@
 </div>
 
 </body>
-</html>
+</html>input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #bcbcbc;
+    cursor: pointer;
+}
