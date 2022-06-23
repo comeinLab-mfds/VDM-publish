@@ -12,9 +12,9 @@
 
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="./js/chart.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.nice-select.js"></script>
+    <script src="./js/chart.js"></script>
     <script src="./js/main.js"></script>
 
     <script>
@@ -66,6 +66,9 @@
                 </div>
             </div>
         </div>
+    </header>
+
+    <main class="content">
 
         <div class="nav-select-wrapper">
             <div class="patient-chart">
@@ -73,22 +76,22 @@
                     <div class="card-title">Patient Information</div>
                     <div class="patient-info-wrapper">
                         <div class="select-wrapper">
-                        <div class="patient-select">
-                            <select>
-                                <option value="1">Patient ID</option>
-                                <option value="2">101010</option>
-                            </select>
+                            <div class="patient-select">
+                                <select>
+                                    <option value="1">Patient ID</option>
+                                    <option value="2">101010</option>
+                                </select>
+                            </div>
+                            <div class="patient-age">
+                                <select>
+                                    <option>Age</option>
+                                    <option>1975/05/10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="patient-age">
-                            <select>
-                                <option>Age</option>
-                                <option>50</option>
-                            </select>
-                        </div>
-                    </div>
                         <div class="alarm-state normal">
                         After 30min
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card chat-checkbox">
@@ -138,10 +141,6 @@
             </div>
         </div>
 
-
-    </header>
-
-    <main class="content">
         <div class="chart-container">
             <div id="chart_PP" class="chart"></div>
         </div>
