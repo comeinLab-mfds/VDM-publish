@@ -83,106 +83,151 @@
                     <!--</div>-->
             </div>
 
-            <div class="input-content">
-                <div class="content-view">
-                    <div class="input-container">
-                        <label for="PatientID">Patient ID</label>
-                        <input id="PatientID" type="text" value="13579" disabled>
-                    </div>
-                    <div class="input-container">
-                        <label>Age</label>
-                        <input class="datepicker"  type="text" autocomplete="off">
-                    </div>
-                    <div class="input-container">
-                        <label>Ward</label>
-                        <div class="ward-select">
-                            <select>
-                                <option value="">Ward</option>
-                                <option value="">NS-SICU</option>
-                                <option value="">NS-NICU</option>
-                                <option value="">NS-NICU</option>
-                            </select>
+            <div class="input-content bt-wrap">
+                <div class="edit-content">
+                    <div class="content-view">
+                        <div class="input-container">
+                            <label for="PatientID">Patient ID</label>
+                            <input id="PatientID" type="text" value="13579" disabled>
+                        </div>
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" autocomplete="off">
                         </div>
                     </div>
+
+                    <div class="content-view">
+                        <div class="input-container">
+                            <label for="PatientBith">Birthday</label>
+                            <input id="PatientBith" class="datepicker" type="text" autocomplete="off">
+                        </div>
+                        <div class="input-container">
+                            <label for="Age">Age</label>
+                            <input id="Age" class="datepicker" type="text" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="content-view">
+                        <div class="input-container">
+                            <label>Ward</label>
+                            <div class="ward-select">
+                                <select>
+                                    <option value="">Ward</option>
+                                    <option value="">NS-SICU</option>
+                                    <option value="">NS-NICU</option>
+                                    <option value="">NS-NICU</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label>Sickbed</label>
+                            <div class="Sickbed-select">
+                                <select>
+                                    <option value="">Sickbed</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-view">
+                        <div class="input-container">
+                            <div class="input-title">Sex</div>
+                            <div class="checkbox-flex">
+                                <div class="checkbox-select">
+                                    <input type="checkbox" id="checkbox-m"checked>
+                                    <label for="checkbox-m"><span></span>M</label>
+                                </div>
+                                <div class="checkbox-select">
+                                    <input type="checkbox" id="checkbox-f">
+                                    <label for="checkbox-f"><span></span>F</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="input-title">Alcohol</div>
+                            <div class="checkbox-flex">
+                                <div class="checkbox-select">
+                                    <input type="checkbox" id="checkbox-yes" checked>
+                                    <label for="checkbox-yes"><span></span>Yes</label>
+                                </div>
+                                <div class="checkbox-select">
+                                    <input type="checkbox" id="checkbox-no">
+                                    <label for="checkbox-no"><span></span>No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-view">
+                        <div class="input-container">
+                            <label for="HbA1c">HbA1c</label>
+                            <input id="HbA1c" type="text" value="38">
+                        </div>
+                        <div class="input-container">
+                            <label for="D-dimer">D-dimer</label>
+                            <input id="D-dimer" type="text" value="0.9">
+                        </div>
+                    </div>
+
+                    <div class="content-view">
+                        <div class="input-container">
+                            <label for="PT_INR">PT_INR</label>
+                            <input id="PT_INR" type="text" value="12.0">
+                        </div>
+                        <div class="input-container">
+                            <label for="Hb">Hb</label>
+                            <input id="Hb" type="text" value="17.0">
+                        </div>
+                    </div>
+                    <div class="content-view">
+                        <div class="input-container">
+                            <label for="mRSr">NIHSS</label>
+                            <input id="mRSr" type="text" value="2.0">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-view bt-content">
                     <div class="input-container">
-                        <label>Sickbed</label>
-                        <div class="Sickbed-select">
-                            <select>
-                                <option value="">Sickbed</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                            </select>
+                            <label for="bodyTemp">Body Temperature</label>
+                            <input id="bodyTemp" type="text" value="36.5">
+                        </div>
+                    <div class="bt-history">
+                        <label>BT history</label>
+                        <div class="history_list-wrap">
+                            <ul class="history_list th">
+                                <li>BT</li>
+                                <li>time</li>
+                                <li>수정자</li>
+                            </ul>
+                            <div class="history_list_td">
+                                <ul class="history_list">
+                                    <li>36.5</li>
+                                    <li>2022-06-24 15:01</li>
+                                    <li>admin1</li>
+                                </ul>
+                                <ul class="history_list">
+                                    <li>36.5</li>
+                                    <li>2022-06-24 15:01</li>
+                                    <li>admin1</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="content-view">
-                    <div class="input-container">
-                        <div class="input-title">Sex</div>
-                        <div class="checkbox-flex">
-                            <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-m"checked>
-                                <label for="checkbox-m"><span></span>M</label>
-                            </div>
-                            <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-f">
-                                <label for="checkbox-f"><span></span>F</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-container">
-                        <div class="input-title">Alcohol</div>
-                        <div class="checkbox-flex">
-                            <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-yes" checked>
-                                <label for="checkbox-yes"><span></span>Yes</label>
-                            </div>
-                            <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-no">
-                                <label for="checkbox-no"><span></span>No</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-container">
-                        <label for="HbA1c">HbA1c</label>
-                        <input id="HbA1c" type="text" value="38">
-                    </div>
-                    <div class="input-container">
-                        <label for="D-dimer">D-dimer</label>
-                        <input id="D-dimer" type="text" value="0.9">
-                    </div>
-
-                </div>
-
-                <div class="content-view">
-                    <div class="input-container">
-                        <label for="PT_INR">PT_INR</label>
-                        <input id="PT_INR" type="text" value="12.0">
-                    </div>
-                    <div class="input-container">
-                        <label for="Hb">Hb</label>
-                        <input id="Hb" type="text" value="17.0">
-                    </div>
-                    <div class="input-container">
-                        <label for="mRSr">NIHSS</label>
-                        <input id="mRSr" type="text" value="2.0">
-                    </div>
-                    <div class="input-container">
-                        <label for="bodyTemp">Body Temperature</label>
-                        <input id="bodyTemp" type="text" value="36.5">
-                    </div>
-                </div>
-
-                <div class="button-container">
+            </div>
+            <div class="button-container">
                     <button type="button" class="btn btn-submit">Update</button>
                     <button type="button" class="btn btn-cancel" onclick="location.href='data_list.html'">Cancel</button>
-                    <button type="button" class="btn btn-cancel btn-request">Delete Request</button>
+                    <button type="button" class="btn btn-cancel btn-request">Delete</button>
                 </div>
-            </div>
+
         </div>
+
     </main>
 </div>
 

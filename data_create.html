@@ -18,11 +18,13 @@
     <script src="./js/bootstrap-datepicker.js"></script>
     <script src="./js/main.js"></script>
 
+
     <script>
         $(document).ready(function() {
             $('select').niceSelect();
         });
     </script>
+
 
 
 
@@ -85,11 +87,15 @@
                 <div class="content-view">
                     <div class="input-container">
                         <label for="PatientID">Patient ID</label>
-                        <input id="PatientID" type="text">
+                        <input id="PatientID" type="text" autocomplete="off">
                     </div>
                     <div class="input-container">
-                        <label for="PatientAge">Age</label>
-                        <input id="PatientAge" type="text">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" autocomplete="off">
+                    </div>
+                    <div class="input-container">
+                        <label for="PatientAge">Birthday</label>
+                        <input id="PatientAge" class="datepicker" type="text" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <label>Ward</label>
@@ -145,11 +151,11 @@
                     </div>
                     <div class="input-container">
                         <label for="HbA1c">HbA1c</label>
-                        <input id="HbA1c" type="text">
+                        <input id="HbA1c" type="text" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <label for="D-dimer">D-dimer</label>
-                        <input id="D-dimer" type="text">
+                        <input id="D-dimer" type="text" autocomplete="off">
                     </div>
 
                 </div>
@@ -157,19 +163,19 @@
                 <div class="content-view">
                     <div class="input-container">
                         <label for="PT_INR">PT_INR</label>
-                        <input id="PT_INR" type="text">
+                        <input id="PT_INR" type="text" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <label for="Hb">Hb</label>
-                        <input id="Hb" type="text">
+                        <input id="Hb" type="text" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <label for="mRSr">NIHSS</label>
-                        <input id="mRSr" type="text">
+                        <input id="mRSr" type="text" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <label for="bodyTemp">Body Temperature</label>
-                        <input id="bodyTemp" type="text">
+                        <input id="bodyTemp" type="text" autocomplete="off">
                     </div>
                 </div>
 
@@ -181,6 +187,12 @@
         </div>
     </main>
 </div>
+
+
+
+    <script>
+    $('.datepicker').datepicker();
+    </script>
 
 </body>
 </html>
