@@ -372,13 +372,20 @@ justify-content: center;
 max-width: 1440px;
 margin:0 auto;
 width:100%;
+flex-direction: column;
 }
 
 .patient-chart .patient-information{
-margin-right:1rem;
-width:33%;
+margin-right: 1rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-bottom: 1rem;
+justify-content: space-between;
 }
 
+.card-title.margin-right{
+margin-right:1rem;}
 
 .patient-chart .patient-information .card-title,
 .patient-chart .chat-checkbox .card-title{
@@ -392,10 +399,16 @@ justify-content: center;}
 
 .patient-information .select-wrapper{
 display:flex;
-align-items:center;}
+align-items:flex-start;}
 
-.patient-information .select-wrapper .patient-select{
-margin-right:1rem;}
+.select-title{
+margin-right:0.5rem;
+color:#93a2b1;}
+
+.patient-information .select-wrapper .patient-select,
+.patient-information .select-wrapper .patient-age{
+margin-right:1rem;
+display: flex}
 
 .patient-information .alarm-state{
 
@@ -417,26 +430,139 @@ background-color: var(--active-red);
 }
 
 
-.chat-checkbox{
-width:67%;}
 
 .chat-checkbox .checkbox-wrapper{
 display: flex;
 align-items: center;
 flex-wrap: wrap;
 flex: 1 1 auto;
-width: 100%;}
+width: 100%;
+justify-content: space-between;}
 
-.chat-checkbox .checkbox-wrapper .checkbox-margin{
-margin: 0 0.5rem 0.5rem 0.5rem;}
 
-.chat-checkbox .checkbox-wrapper .checkbox-margin:last-child{
-margin-right:0;}
+.return svg{
+width: 25px;
+height: auto;
+cursor: pointer;
+}
+
 
 
 
 
 /*dashboard*/
+
+
+.alarm_range{
+display:flex;
+align-items:center;}
+
+.alarm_range .title{
+margin-right:0.5rem;
+color:#93a2b1;}
+
+.alarm-state{
+display:flex;
+align-items:center;
+}
+
+.alarm-state .alarm_info{
+display:flex;
+align-items:center;
+margin-right:0.5rem;
+}
+
+.alarm-state .alarm_info div:last-child{
+margin-right:0;
+}
+
+.alarm-state .alarm_info .alarm-color{
+padding: 0.2rem 0.5rem;
+border-radius: 0.3rem;}
+
+.alarm_info .alarm-state.normal{
+background-color:var(--active-green);}
+
+.alarm_info .alarm-state.caution{
+background-color: var(--active-orange);
+}
+
+.alarm_info .alarm-state.danger{
+background-color: var(--active-red);
+}
+
+.patients-list{
+margin:1rem 0;
+height: 100%;
+width: 100%;}
+
+.patients-list .date-list{
+display:flex;
+align-items:center;
+width:100%;
+flex: 1 1 auto;
+text-align: center;
+padding: 0.7rem;
+position: relative;}
+
+
+.patients-list .date-list.th{
+color:#93a2b1;
+}
+
+.patients-list .date-list li:nth-of-type(1){
+width:20%;}
+
+.patients-list .date-list li:nth-of-type(2){
+width:15%;}
+
+.patients-list .date-list li:nth-of-type(3){
+width:15%;}
+
+.patients-list .date-list li:nth-of-type(4){
+width:15%;}
+
+.patients-list .date-list li:nth-of-type(5){
+width:15%;}
+
+.patients-list .date-list li:nth-of-type(6){
+width:20%;
+display: flex;
+justify-content: center;}
+
+
+.patients-list .date-list-content .date-list{
+background-color: #323746;
+cursor: pointer;
+color: white;
+margin-bottom: 0.5rem;
+border-radius:0.375rem;
+}
+
+.patients-list .date-list-content{
+overflow-y:auto;
+height:88%;}
+
+
+.patients-list .alarm-state{
+border-radius:5px;
+padding:0.5rem 1rem;
+color:#fff;
+width: 120px;
+display: flex;
+justify-content: center;
+}
+
+.patients-list .alarm-state.normal{
+background-color:var(--active-green);}
+
+.patients-list .alarm-state.caution{
+background-color: var(--active-orange);
+}
+
+.patients-list .alarm-state.danger{
+background-color: var(--active-red);
+}
 
 .content{
 
@@ -1327,7 +1453,11 @@ fill: #fff;
 
   .patient-information .select-wrapper .patient-select{
      margin-right: 0;
-     margin-bottom:.5rem;}
+     margin-bottom:.5rem;
+ }
 
 }
+
+
+
 
