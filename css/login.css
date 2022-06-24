@@ -101,28 +101,6 @@ body {
   border-bottom-color: #2f3a50;
 }
 
-.input-field i {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #999;
-  font-size: 23px;
-  transition: color 0.4s ease;
-}
-
-.input-field input:is(:focus, :valid) ~ i {
-  color: #4070f4;
-}
-
-.input-field i.icon {
-  left: 0;
-}
-
-.input-field i.showHidePw {
-  right: 0;
-  cursor: pointer;
-  padding: 10px;
-}
 
 .form .checkbox-text {
   display: flex;
@@ -160,9 +138,12 @@ body {
 
 .form .button {
   margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.form .button input {
+.form .button button {
   border: none;
   color: #fff;
   font-size: 17px;
@@ -172,9 +153,10 @@ body {
   background-color: #4d6089;
   cursor: pointer;
   transition: all 0.6s ease;
+  padding: 1rem 2rem;
 }
 
-.button input:hover {
+.button button:hover {
   background-color: #5a8dee;
 }
 
