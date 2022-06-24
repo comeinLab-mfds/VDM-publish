@@ -30,8 +30,8 @@
   --active-orange:#fdac41;
   --active-green:#1eb168;
   --card-background:#2f3a50;
-  --input-bgc:#484c5a;
-  --input-disabled-color:#222938;
+  --input-bgc:#222938;
+  --input-disabled-color:#484c5a;
 }
 
 
@@ -1223,6 +1223,12 @@ outline: 0;
 box-shadow: none;
 border: 0;}
 
+
+.ward-bed-list .button-container{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 0;}
 
 
 /*modal common*/
