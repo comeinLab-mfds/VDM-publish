@@ -1382,6 +1382,26 @@ justify-content: center;
 margin-top: 0;}
 
 
+
+
+/*datapicker*/
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td{
+color:#999;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover{
+color:#fff;}
+
+.daterangepicker.show-calendar .drp-buttons{
+display: flex;
+justify-content: flex-end;
+align-items: center;}
+
+.drp-selected{
+color:#000;}
+
 /*modal common*/
 
 
