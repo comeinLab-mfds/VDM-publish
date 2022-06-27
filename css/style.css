@@ -716,11 +716,25 @@ color:var(--list-title-color);}
 display:flex;
 flex: 1 1 auto;}
 
+.content-view-between{
+display:flex;
+justify-content:space-between;
+width: 100%;
+}
+
+.content-view-wrap{
+display:flex;
+}
+
 .button-container{
 display:flex;
 align-items:center;
 justify-content: center;
 margin-top:2rem;
+}
+
+.button-container.button-left{
+justify-content: flex-start;
 }
 
 .ward-select .nice-select,

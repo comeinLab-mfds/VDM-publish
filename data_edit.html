@@ -75,6 +75,7 @@
                 <div class="content-title">
                     Data edit
                 </div>
+                <button type="button" class="btn btn-cancel" onclick="location.href='data_list.html'">Cancel</button>
                     <!--<div class="btn temp-btn modal-btn">-->
                     <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">-->
                     <!--<path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z"/>-->
@@ -182,6 +183,7 @@
                             <input id="Hb" type="text" value="17.0">
                         </div>
                     </div>
+
                     <div class="content-view">
                         <div class="input-container">
                             <label for="mRSr">NIHSS</label>
@@ -189,12 +191,26 @@
                         </div>
                     </div>
 
+                    <div class="button-container button-left">
+                    <button type="button" class="btn btn-submit">Modify</button>
+                    <button type="button" class="btn btn-cancel btn-request">Delete</button>
+            </div>
+
                 </div>
-                <div class="content-view bt-content">
-                    <div class="input-container">
-                            <label for="bodyTemp">Body Temperature</label>
-                            <input id="bodyTemp" type="text" value="36.5">
+                <div class="bt-content">
+                    <div class="content-view content-view-between">
+                        <div class="content-view-wrap">
+                            <div class="input-container">
+                                <label for="bodyTemp">Body Temperature</label>
+                                <input id="bodyTemp" type="text" value="36.5">
+                            </div>
+                            <div class="input-container">
+                                <label for="temperature">Temperature Time</label>
+                                <input id="temperature" type="text" value="">
+                            </div>
                         </div>
+                        <button type="button" class="btn btn-submit">Update</button>
+                    </div>
                     <div class="bt-history">
                         <label>BT history</label>
                         <div class="history_list-wrap">
@@ -220,11 +236,7 @@
                 </div>
 
             </div>
-            <div class="button-container">
-                    <button type="button" class="btn btn-submit">Update</button>
-                    <button type="button" class="btn btn-cancel" onclick="location.href='data_list.html'">Cancel</button>
-                    <button type="button" class="btn btn-cancel btn-request">Delete</button>
-                </div>
+
 
         </div>
 
