@@ -132,12 +132,26 @@
                         <div class="input-title">Sex</div>
                         <div class="checkbox-flex">
                             <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-m">
-                                <label for="checkbox-m"><span></span>M</label>
+                                <input class="inp-cbx" id="checkbox-m" type="checkbox" />
+                                <label class="cbx" for="checkbox-m">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>M</span>
+                                </label>
                             </div>
                             <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-f">
-                                <label for="checkbox-f"><span></span>F</label>
+                                <input class="inp-cbx" id="checkbox-F" type="checkbox"/>
+                                <label class="cbx" for="checkbox-F">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>F</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -145,12 +159,26 @@
                         <div class="input-title">Alcohol</div>
                         <div class="checkbox-flex">
                             <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-yes">
-                                <label for="checkbox-yes"><span></span>Yes</label>
+                                <input class="inp-cbx" id="checkbox-yes" type="checkbox"/>
+                                <label class="cbx" for="checkbox-yes">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>YES</span>
+                                </label>
                             </div>
                             <div class="checkbox-select">
-                                <input type="checkbox" id="checkbox-no">
-                                <label for="checkbox-no"><span></span>No</label>
+                                <input class="inp-cbx" id="checkbox-no" type="checkbox"/>
+                                <label class="cbx" for="checkbox-no">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                            <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>NO</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -193,6 +221,12 @@
     </main>
 </div>
 
+        <!--checkbox svg-->
+        <svg class="inline-svg">
+            <symbol id="check" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+            </symbol>
+        </svg>
 
 
     <script>

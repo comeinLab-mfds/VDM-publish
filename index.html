@@ -100,39 +100,77 @@
                     <div class="checkbox-wrapper">
 
                         <div class="checkbox-margin">
-                            <input type="checkbox" id="PredictionProbability" name="monster" checked>
-                            <label for="PredictionProbability"><span></span>Prediction Probability</label>
+                            <input class="inp-cbx" id="PP" type="checkbox" checked/>
+                                <label class="cbx" for="PP">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check"></use>
+                                    </svg>
+                                    </span>
+                                    <span>Prediction Probability </span>
+                                </label>
                         </div>
 
                         <div class="checkbox-margin">
-                            <input type="checkbox" id="BodyTemperature " name="monster" checked>
-                            <label for="BodyTemperature "><span></span>Body Temperature </label>
+                            <input class="inp-cbx" id="BT" type="checkbox" checked/>
+                                <label class="cbx" for="BT">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check"></use>
+                                    </svg>
+                                    </span>
+                                    <span>Body Temperature </span>
+                                </label>
                         </div>
 
                         <div class="checkbox-margin">
-                            <input type="checkbox" id="HeartRate" name="monster" checked>
-                            <label for="HeartRate"><span></span>Heart Rate(HR)</label>
+                            <input class="inp-cbx" id="HeartRate" type="checkbox" checked/>
+                                <label class="cbx" for="HeartRate">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check"></use>
+                                    </svg>
+                                    </span>
+                                    <span>Heart Rate(HR)</span>
+                                </label>
                         </div>
 
                         <div class="checkbox-margin">
-                            <input type="checkbox" id="SpO2" name="monster" checked>
-                            <label for="SpO2"><span></span>SpO2</label>
+                            <input class="inp-cbx" id="SpO2" type="checkbox" checked/>
+                                <label class="cbx" for="SpO2">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check"></use>
+                                    </svg>
+                                    </span>
+                                    <span>SpO2</span>
+                                </label>
                         </div>
 
                         <div class="checkbox-margin">
-                            <input type="checkbox" id="RespiratoryRate" name="monster" checked>
-                            <label for="RespiratoryRate"><span></span>Respiratory Rate(RR)</label>
+                            <input class="inp-cbx" id="Respiratory Rate(RR)" type="checkbox" checked/>
+                                <label class="cbx" for="Respiratory Rate(RR)">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check"></use>
+                                    </svg>
+                                    </span>
+                                    <span>Respiratory Rate(RR)</span>
+                                </label>
                         </div>
 
                         <div class="checkbox-margin">
-                            <input type="checkbox" id="SBP" name="monster" checked>
-                            <label for="SBP"><span></span>SBP</label>
+                            <input class="inp-cbx" id="BP" type="checkbox" checked/>
+                                <label class="cbx" for="BP">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check"></use>
+                                    </svg>
+                                    </span>
+                                    <span>BP</span>
+                                </label>
                         </div>
 
-                        <div class="checkbox-margin">
-                            <input type="checkbox" id="DBP" name="monster" checked>
-                            <label for="DBP"><span></span>DBP</label>
-                        </div>
 
 
                     </div>
@@ -140,6 +178,13 @@
 
             </div>
         </div>
+
+        <!--checkbox svg-->
+        <svg class="inline-svg">
+            <symbol id="check" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+            </symbol>
+        </svg>
 
         <div class="chart-container">
             <div id="chart_PP" class="chart"></div>
@@ -157,10 +202,7 @@
             <div id="chart_RR" class="chart"></div>
         </div>
         <div class="chart-container">
-            <div id="chart_SBP" class="chart"></div>
-        </div>
-        <div class="chart-container">
-            <div id="chart_DBP" class="chart"></div>
+            <div id="chart_BP" class="chart"></div>
         </div>
     </main>
 </div>
