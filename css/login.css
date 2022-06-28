@@ -1,4 +1,11 @@
 
+@font-face {
+    font-family: 'Kdam Thmor Pro';
+    font-weight: 400;
+    src: url("../fonts/KdamThmorPro-Regular.ttf"); }
+
+
+
 input[type=checkbox], input[type=radio]{
 margin:0!important;}
 
@@ -65,7 +72,7 @@ body {
 }
 
 .container.active .forms {
-  height: 600px;
+  height: 650px;
 }
 
 .container .form .title {
@@ -168,3 +175,11 @@ body {
 .checkbox-content label{
 margin: 0 0.5rem!important;}
 
+
+.login-logo{
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
