@@ -4,10 +4,84 @@ google.charts.setOnLoadCallback(drawBasic);
 google.charts.setOnLoadCallback(drawBasicHr);
 google.charts.setOnLoadCallback(drawBasicSp);
 google.charts.setOnLoadCallback(drawBasicRR);
-google.charts.setOnLoadCallback(drawBasicSBP);
-google.charts.setOnLoadCallback(drawBasicDBP);
+google.charts.setOnLoadCallback(drawBasicBP);
 google.charts.setOnLoadCallback(drawBasicPP);
 
+
+function drawBasicPP() {
+
+  var data = new google.visualization.DataTable();
+  data.addColumn('number', 'min');
+  data.addColumn('number', 'PP');
+
+  data.addRows([
+    [0, 60],   [30, 55],  [60, 53 ],  [90, 66],  [120, 55],  [150, 58],
+    [180, 45 ],  [210, 57],  [240, 62],  [270, 59],  [300, 51], [330, 62],
+    [360, 62], [ 390, 60], [420, 59], [450, 59], [480, 62]
+
+  ]);
+
+  var options = {
+    colors:['darkseagreen'],
+    /*explorer: {
+        axis: 'horizontal',
+    },*/
+    backgroundColor: 'transparent',
+    width: "100%",
+    height: "100%",
+    legend: 'none',
+    colors:['#F8DE7E'],
+    fontSize: 15,
+    pointSize: 0,
+    lineWidth: 2,
+    intervals: {
+        color: "#a29380"
+    },
+    chartArea: {
+        width: '95%',
+        height: '73%'
+    },
+    hAxis: {
+      baseline: {
+        color:'#ccc'
+      },
+      ticks: [30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480],
+      gridlines: {color: '#777'},
+      minorGridlines: {
+        color: '#333',
+        units: {
+                hours: {format: ['ha']},
+        },
+      },
+      textStyle: {
+        color:'white'
+      },
+      titleTextStyle:{
+        color:'white'
+      },
+    },
+    vAxis: {
+      title: 'PP',
+      ticks: [20,40,60,80],
+      baseline: 20,
+      baselineColor: '#777',
+      gridlines:{
+        color: '#777',
+        count:1,
+      },
+      textStyle: {
+        color:'white'
+      },
+      titleTextStyle:{
+        color:'white'
+      }
+    }
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('chart_PP'));
+
+  chart.draw(data, options);
+}
 
 function drawBasic() {
 
@@ -305,224 +379,77 @@ function drawBasicRR() {
   chart.draw(data, options);
 }
 
-function drawBasicSBP() {
+function drawBasicBP() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'SBP');
+      data.addColumn('number', 'DBP');
 
-  var data = new google.visualization.DataTable();
-  data.addColumn('number', 'min');
-  data.addColumn('number', 'BT');
+      data.addRows([
+        [0, 72, 112],    [30, 76, 111],   [60, 70, 113],  [90, 79 ,115],   [120, 75, 110],  [150, 70, 108],
+        [180, 80, 105],   [210, 75, 112],  [240, 75, 120],  [270, 75, 114],  [300, 72, 110], [330, 70, 111],
+        [360, 74, 116], [390, 72, 114], [420, 70, 110], [450, 75, 114], [480, 76, 112]
+      ]);
 
-  data.addRows([
-    [0, 112],   [30, 111],  [60, 113 ],  [90, 115],  [120, 110],  [150, 108],
-    [180, 105 ],  [210, 112],  [240, 120],  [270, 114],  [300, 110], [330, 111],
-    [360, 116], [ 390, 114], [420, 110], [450, 114], [480, 112]
-
-  ]);
-
-  var options = {
-    colors:['darkseagreen'],
-    /*explorer: {
-        axis: 'horizontal',
-    },*/
-    backgroundColor: 'transparent',
-    width: "100%",
-    height: "100%",
-    legend: 'none',
-    fontSize: 15,
-    pointSize: 0,
-    lineWidth: 2,
-    intervals: {
-        color: "#a29380"
-    },
-    chartArea: {
-        width: '95%',
-        height: '73%'
-    },
-    hAxis: {
-      baseline: {
-        color:'#ccc'
-      },
-      ticks: [30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480],
-      gridlines: {color: '#777'},
-      minorGridlines: {
-        color: '#333',
-        units: {
-                hours: {format: ['ha']},
+    var options = {
+        backgroundColor: 'transparent',
+        width: "100%",
+        height: "100%",
+        legend: 'none',
+        fontSize: 15,
+        pointSize: 0,
+        lineWidth: 2,
+        intervals: {
+            color: "#a29380"
         },
-      },
-      textStyle: {
-        color:'white'
-      },
-      titleTextStyle:{
-        color:'white'
-      },
-    },
-    vAxis: {
-      title: 'SBP',
-      ticks: [80,100,120,140],
-      baseline: 80,
-      baselineColor: '#777',
-      gridlines:{
-        color: '#777',
-        count:1,
-      },
-      textStyle: {
-        color:'white'
-      },
-      titleTextStyle:{
-        color:'white'
-      }
-    }
-  };
-
-  var chart = new google.visualization.LineChart(document.getElementById('chart_SBP'));
-
-  chart.draw(data, options);
-}
-
-function drawBasicDBP() {
-
-  var data = new google.visualization.DataTable();
-  data.addColumn('number', 'min');
-  data.addColumn('number', 'DBP');
-
-  data.addRows([
-    [0, 52],   [30,56],  [60, 60 ],  [90, 49],  [120, 55],  [150, 50],
-    [180, 60 ],  [210, 55],  [240, 58],  [270, 55],  [300, 52], [330, 60],
-    [360, 54], [ 390, 52], [420, 50], [450, 55], [480, 56]
-
-  ]);
-
-  var options = {
-    colors:['darkseagreen'],
-    /*explorer: {
-        axis: 'horizontal',
-    },*/
-    backgroundColor: 'transparent',
-    width: "100%",
-    height: "100%",
-    legend: 'none',
-    fontSize: 15,
-    pointSize: 0,
-    lineWidth: 2,
-    intervals: {
-        color: "#a29380"
-    },
-    chartArea: {
-        width: '95%',
-        height: '73%'
-    },
-    hAxis: {
-      baseline: {
-        color:'#ccc'
-      },
-      ticks: [30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480],
-      gridlines: {color: '#777'},
-      minorGridlines: {
-        color: '#333',
-        units: {
-                hours: {format: ['ha']},
+        chartArea: {
+            width: '95%',
+            height: '73%'
         },
-      },
-      textStyle: {
-        color:'white'
-      },
-      titleTextStyle:{
-        color:'white'
-      },
-    },
-    vAxis: {
-      title: 'DBP',
-      ticks: [40,60,80,100],
-      baseline: 40,
-      baselineColor: '#777',
-      gridlines:{
-        color: '#777',
-        count:1,
-      },
-      textStyle: {
-        color:'white'
-      },
-      titleTextStyle:{
-        color:'white'
-      }
-    }
-  };
-
-  var chart = new google.visualization.LineChart(document.getElementById('chart_DBP'));
-
-  chart.draw(data, options);
-}
-
-function drawBasicPP() {
-
-  var data = new google.visualization.DataTable();
-  data.addColumn('number', 'min');
-  data.addColumn('number', 'PP');
-
-  data.addRows([
-    [0, 60],   [30, 55],  [60, 53 ],  [90, 66],  [120, 55],  [150, 58],
-    [180, 45 ],  [210, 57],  [240, 62],  [270, 59],  [300, 51], [330, 62],
-    [360, 62], [ 390, 60], [420, 59], [450, 59], [480, 62]
-
-  ]);
-
-  var options = {
-    colors:['darkseagreen'],
-    /*explorer: {
-        axis: 'horizontal',
-    },*/
-    backgroundColor: 'transparent',
-    width: "100%",
-    height: "100%",
-    legend: 'none',
-    fontSize: 15,
-    pointSize: 0,
-    lineWidth: 2,
-    intervals: {
-        color: "#a29380"
-    },
-    chartArea: {
-        width: '95%',
-        height: '73%'
-    },
-    hAxis: {
-      baseline: {
-        color:'#ccc'
-      },
-      ticks: [30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480],
-      gridlines: {color: '#777'},
-      minorGridlines: {
-        color: '#333',
-        units: {
-                hours: {format: ['ha']},
+        series: {
+              0:{color:'#ff6666'},
+              1: {color:'#A7C7E7' }
+            },
+        hAxis: {
+          baseline: {
+            color:'#ccc'
+          },
+          ticks: [30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480],
+          gridlines: {color: '#777'},
+          minorGridlines: {
+            color: '#333',
+            units: {
+                    hours: {format: ['ha']},
+            },
+          },
+          textStyle: {
+            color:'white'
+          },
+          titleTextStyle:{
+            color:'white'
+          },
         },
-      },
-      textStyle: {
-        color:'white'
-      },
-      titleTextStyle:{
-        color:'white'
-      },
-    },
-    vAxis: {
-      title: 'PP',
-      ticks: [20,40,60,80],
-      baseline: 20,
-      baselineColor: '#777',
-      gridlines:{
-        color: '#777',
-        count:1,
-      },
-      textStyle: {
-        color:'white'
-      },
-      titleTextStyle:{
-        color:'white'
-      }
-    }
-  };
+        vAxis: {
+          title: 'BP',
+          ticks: [60,80,100,120,140],
+          baseline: 60,
+          baselineColor: '#777',
+          gridlines:{
+            color: '#777',
+            count:1,
+          },
+          textStyle: {
+            color:'white'
+          },
+          titleTextStyle:{
+            color:'white'
+          }
+        }
+      };
 
-  var chart = new google.visualization.LineChart(document.getElementById('chart_PP'));
 
-  chart.draw(data, options);
-}
+      var chart = new google.visualization.LineChart(document.getElementById('chart_BP'));
+      chart.draw(data, options);
+    };
+
+
