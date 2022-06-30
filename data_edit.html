@@ -7,14 +7,16 @@
 
     <link rel="stylesheet" href="./css/nice-select.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./css/daterangepicker.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./js/chart.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.nice-select.js"></script>
-    <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/package.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/daterangepicker.js"></script>
     <script src="./js/main.js"></script>
 
     <script>
@@ -100,7 +102,7 @@
                     <div class="content-view">
                         <div class="input-container">
                             <label for="PatientBith">Birthday</label>
-                            <input id="PatientBith" class="datepicker" type="text" autocomplete="off">
+                            <input id="PatientBith" class="datepicker" type="text" name="datetimes" value="01/01/2018 - 01/15/2018"  autocomplete="off">
                         </div>
                         <div class="input-container">
                             <label for="Age">Age</label>
@@ -305,7 +307,19 @@
         </div>
     </div>
 </div>
-
+<script>
+        $(function() {
+              $('input[name="datetimes"]').daterangepicker({
+                timePicker: true,
+                startDate: moment().startOf('hour'),
+                endDate: moment().startOf('hour').add(32, 'hour'),
+                locale: {
+                  format: 'M/DD hh:mm A'
+                }
+              });
+              $('.ui-datepicker').addClass('notranslate');
+            });
+    </script>
 
 
 </body>
