@@ -310,6 +310,14 @@ background-color:#7390cf;
 opacity:0.9;
 }
 
+.data-submit-btn{
+background-color: #4d6089;
+padding: 0.5rem 1rem;
+border: 1px solid #56637e;
+width: 100%;
+margin-top: 0.7rem;
+margin-left: 0.5rem;
+}
 
 
 
@@ -821,13 +829,15 @@ width: 100%;
 
 .content-view-wrap{
 display:flex;
+width:100%;
+align-items: center;
 }
 
 .button-container{
 display:flex;
 align-items:center;
 justify-content: center;
-margin-top:2rem;
+margin-top:1rem;
 }
 
 .button-container.button-left{
