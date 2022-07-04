@@ -977,7 +977,9 @@ background-color: #accb33;}
 background-color:#373a46;
 color:#85899a;
 border-radius: 0.325rem;
-margin-right:0.5rem;}
+margin-right:0.5rem;
+padding:1rem 1.3rem;
+cursor:pointer;}
 
 .sub-header .main-menu .item:last-child{
 margin-right:0;
@@ -986,22 +988,6 @@ margin-right:0;
 .sub-header .main-menu .item.active{
 background-color:#5a8dee;
 color:#fff}
-
-.sub-header .main-menu .item .item__name {
-    padding: 1rem 1.5rem;
-    font-size: 13px;
-}
-
-
-.sub-header .main-menu .item.active:hover .item__name{
-background-color:#5a8dee;
-color:#fff}
-
-.sub-header .main-menu .item:hover .item__name {
-    background-color: #415070;
-    color: #fff;
-    border-radius: 0.5rem;
-}
 
 .sub-header .main-menu .item .item__contents {
     position: fixed;
