@@ -1218,7 +1218,7 @@ align-items:center;
 
 /*user admin modal*/
 
-.modal .modal-content.admin_content{
+.modal .modal-body.admin_content{
 min-width:35vw;}
 
 .input-content .admin_list_modal{
@@ -1414,7 +1414,7 @@ cursor:pointer;}
 .modal button{
 cursor:pointer;}
 
-.modal-content.ward_content{
+.modal-body.ward_content{
 max-width:360px}
 
 .modal-contents.ward-edit-modal{
@@ -1519,7 +1519,7 @@ transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 
 
 
-.modal .modal-content {
+.modal .modal-body {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -1535,7 +1535,7 @@ display:flex;
 justify-content: space-between;
 }
 
-.modal-content .modal-title-wrapper .modal-title{
+.modal-body .modal-title-wrapper .modal-title{
 font-size:20px;
 }
 
@@ -1552,13 +1552,13 @@ display: flex;
     justify-content: flex-end;
     }
 
-.modal-content .modal-contents{
+.modal-body .modal-contents{
 margin-top:2rem;}
 
-.modal-content .modal-contents .input-content{
+.modal-body .modal-contents .input-content{
 width:100%;}
 
-.modal-content .modal-contents .modal-input-content{
+.modal-body .modal-contents .modal-input-content{
 display:flex;
 flex-direction: column;
 align-items: flex-start;
