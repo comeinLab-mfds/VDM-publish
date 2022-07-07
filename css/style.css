@@ -94,7 +94,8 @@ color: var(--list-title-color);
 
 /*input[type="text"]*/
 
-input[type="text"]{
+input[type="text"],
+input[type="number"]{
 padding:0.5rem;
 height: 2rem;
 border: 1px solid #69809a;
@@ -110,6 +111,14 @@ color:#fff;
 
 input[type="text"]:disabled {
 background:var(--input-disabled-color);}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 /*input[type="checkbox"]*/
 
@@ -1553,7 +1562,7 @@ display: flex;
     }
 
 .modal-body .modal-contents{
-margin-top:2rem;}
+margin-top:1rem;}
 
 .modal-body .modal-contents .input-content{
 width:100%;}
