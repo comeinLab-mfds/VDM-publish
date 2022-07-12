@@ -110,8 +110,8 @@ color:#fff;
 }
 
 input[type="text"]:disabled {
-background:var(--input-disabled-color);}
-
+background:var(--input-disabled-color);
+color:#fff;}
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -1096,7 +1096,6 @@ border-radius: 0 0.2rem 0.2rem 0;
 
 .create-content {
 flex: 0 0 auto;
-padding: 2rem 0;
 width: 100%;
 max-width: 1200px;
 box-sizing: border-box;
@@ -1117,7 +1116,7 @@ width: 100%;
 position: relative;
 border-radius: 1rem;
 background-color: #323746;
-margin: 0 auto;
+margin: 3rem auto 0;
 flex-direction: column;
 }
 
@@ -1285,13 +1284,14 @@ color:slategray;}
 /*admin data edit*/
 
 .content-settings{
-max-width: 400px;}
+max-width: 400px;
+}
 
 fieldset{
 flex: 1 1 auto;
 max-width: 360px;
 margin: 0 0.5rem;
-max-height: 60vh;
+max-height: 55vh;
 overflow: hidden;
 overflow-y: auto;
 border-radius: 0.5rem;
@@ -1452,6 +1452,12 @@ margin-right:0.5rem;}
 
 .modal .ward-edit-modal .input-container input{
 flex: 1 1 auto;
+}
+
+.modal .popup_list{
+    max-height: 40vh;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .modal .delete-setting svg{
