@@ -700,7 +700,7 @@ width: 2400px;
 .content.page-etc{
 padding:5rem 1rem 1rem 1rem;
 height: calc(var(--vh, 1vh) * 100);
-overflow: hidden;}
+overflow: auto;}
 
 .content-top{
 display:flex;
