@@ -971,11 +971,9 @@ background-color: #accb33;}
 .sub-header {
     width: 100%;
     position: relative;
-    z-index: 9;
 }
 
 .sub-header .main-menu {
-    position: absolute;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -1348,7 +1346,11 @@ fill: #5a8dee!important;
 width: 100%;
 margin: 0 auto;
 fill: #5a8dee;
+cursor:pointer;
 }
+
+.delete-setting{
+cursor:pointer;}
 
 
 
@@ -1417,7 +1419,8 @@ height:88%;}
 
 
 .ward-bed-list .button-container .edit-btn{
-cursor:pointer;}
+cursor:pointer;
+margin:0 0.5rem;}
 
 
 .modal button{
