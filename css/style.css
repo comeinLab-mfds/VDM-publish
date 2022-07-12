@@ -1222,6 +1222,12 @@ align-items:center;
 }
 
 
+#admin-list-wrapper{
+overflow: auto;
+max-height: 45vh;}
+
+
+
 /*user admin modal*/
 
 .modal .modal-body.admin_content{
