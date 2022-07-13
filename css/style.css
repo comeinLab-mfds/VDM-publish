@@ -606,7 +606,7 @@ background-color: var(--active-red);
 
 .patients-list{
 margin:1rem 0;
-height: 100%;
+height: 95%;
 width: 100%;}
 
 .patients-list .date-list{
@@ -700,7 +700,7 @@ width: 2400px;
 .content.page-etc{
 padding:5rem 1rem 1rem 1rem;
 height: calc(var(--vh, 1vh) * 100);
-overflow: auto;}
+}
 
 .content-top{
 display:flex;
@@ -733,7 +733,7 @@ padding: 0.5rem 1rem;
 
 .date-list-wrapper{
 margin:1rem 0;
-height: 100%;
+height: 95%;
 width: 100%;}
 
 .date-list-wrapper .date-list{
@@ -1116,8 +1116,9 @@ width: 100%;
 position: relative;
 border-radius: 1rem;
 background-color: #323746;
-margin: 3rem auto 0;
+margin: 3rem auto 1rem;
 flex-direction: column;
+max-height:80%;
 }
 
 .admin-list-contents .sort-content {
@@ -1310,7 +1311,7 @@ color: #d8dae0;}
 
 .content-settings ul {
 flex-direction: column;
-padding: 0.5rem;
+padding: 1rem;
 }
 
 .content-settings li{
@@ -1320,6 +1321,8 @@ justify-content: space-between;
 padding: 0.7rem 0;
 border-bottom: 1px solid #676a94;
 }
+
+
 
 .content-settings li input {
 flex: 1 1 auto;
@@ -1353,6 +1356,7 @@ width: 100%;
 margin: 0 auto;
 fill: #5a8dee;
 cursor:pointer;
+margin-bottom:1rem;
 }
 
 .delete-setting{
