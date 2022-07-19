@@ -928,7 +928,7 @@ width:33.3%;
 flex:0!important;}
 
 .history_list_td{
-overflow-y: scroll;
+overflow-y: auto;
 height: 82%;
 }
 
