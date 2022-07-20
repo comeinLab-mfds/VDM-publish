@@ -883,7 +883,7 @@ height:680px;
 .bt-content .bt-history{
 padding: 0.5rem;
 width:100%;
-height: 100%;}
+height: 86%;}
 
 .bt-content .bt-history .history_list-wrap{
 padding: 0.5rem;
@@ -929,7 +929,7 @@ flex:0!important;}
 
 .history_list_td{
 overflow-y: auto;
-height: 82%;
+height: 90%;
 }
 
 .button-left button{
